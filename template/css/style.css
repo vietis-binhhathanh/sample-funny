@@ -1,0 +1,7 @@
+/* Font */
+@font-face {
+  font-family: "Yu Gothic";
+  src: url("../../template/font/yugothib.ttf"); }
+
+body {
+  font-family: "Yu Gothic"; }
