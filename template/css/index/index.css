@@ -1,0 +1,93 @@
+.flex-center, .page .introduce-content, .page .news .new-element .new-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex-align-center, .page .banner-bg, .page .news .new-element {
+  display: flex;
+  align-items: center; }
+
+.text-upper-bold, .page .introduce-big-ttl {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.page .banner {
+  height: 100vh;
+  overflow: hidden; }
+  .page .banner-bg {
+    background: url("../../../template/images/top.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 103%;
+    transition: opacity 2s linear,background 5s ease-out;
+    background-position: 0; }
+    .page .banner-bg .slogan {
+      margin: 10% 0 0 5%; }
+      .page .banner-bg .slogan-big, .page .banner-bg .slogan-mini {
+        font-weight: bold;
+        color: #4382C5; }
+      .page .banner-bg .slogan-big {
+        font-size: 3.75rem;
+        text-transform: uppercase; }
+      .page .banner-bg .slogan-mini {
+        font-size: 1.5rem;
+        margin: 1rem 0 4rem; }
+      .page .banner-bg .slogan-descript {
+        font-size: 1.125rem; }
+
+.page .introduce-big-ttl, .page .introduce-ttl {
+  text-align: center; }
+
+.page .introduce-big-ttl {
+  font-size: 3rem;
+  margin-top: 130px; }
+
+.page .introduce-ttl {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 50px; }
+
+.page .introduce-content-element {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 2rem; }
+  .page .introduce-content-element.element-first, .page .introduce-content-element.element-second {
+    max-width: 30%;
+    height: 550px;
+    background-size: contain; }
+  .page .introduce-content-element.element-third {
+    max-width: 20%;
+    background-size: contain; }
+
+.page .introduce-content .element-first {
+  background: url("../../../template/images/b-care.jpg") no-repeat center; }
+
+.page .introduce-content .element-second {
+  background: url("../../../template/images/b-orversea.jpg") no-repeat center; }
+
+.page .introduce-content .element-third {
+  background: url("../../../template/images/b-travel.jpg") no-repeat center; }
+
+.page .news {
+  margin: 4rem; }
+  .page .news .new-big-ttl, .page .news .new-ttl {
+    font-weight: bold; }
+  .page .news .new-big-ttl {
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .page .news .new-ttl {
+    font-size: 1.25rem; }
+  .page .news .new-element {
+    font-size: 1.125rem;
+    padding: 20px 0;
+    border-bottom: 1px solid #ADB7BE; }
+    .page .news .new-element:first-child {
+      padding-top: 0; }
+    .page .news .new-element .new-datetime {
+      font-size: 1.125rem; }
+    .page .news .new-element .new-mark {
+      background-color: #5FC1EA;
+      color: #FFF;
+      margin: 0 15px;
+      width: 170px;
+      border-radius: 10px; }

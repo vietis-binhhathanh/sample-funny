@@ -1,9 +1,24 @@
+@import "utility";
+
 /* Font */
+
 @font-face {
     font-family: "Yu Gothic";
-    src: url('../../template/font/yugothib.ttf');
+    src: url('../../template/fonts/yugothic.ttf');
 }
 
-body {
-    font-family: "Yu Gothic";
+html {
+    font-size: 16px;
+    // 1rem = 16px
+
+    body {
+        font-family: "Yu Gothic";
+        color: $color-default-text;
+        background-color: #FFF;
+
+        img {
+            width: 100%;
+        }
+    }
 }
+

@@ -1,0 +1,22 @@
+//Common variable
+
+$color-default-text: #14294F;
+$color-blue: #4382C5;
+
+// CSS Atomic
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.text-upper-bold {
+  text-transform: uppercase;
+  font-weight: bold;
+}
