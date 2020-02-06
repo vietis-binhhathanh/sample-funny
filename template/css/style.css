@@ -1,9 +1,9 @@
-.flex-center {
+.flex-center, .header .ico-contact {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.flex-align-center {
+.flex-align-center, .header {
   display: flex;
   align-items: center; }
 
@@ -11,12 +11,12 @@
   text-transform: uppercase;
   font-weight: bold; }
 
-.flex-center {
+.flex-center, .header .ico-contact {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.flex-align-center {
+.flex-align-center, .header {
   display: flex;
   align-items: center; }
 
@@ -37,3 +37,79 @@ html {
     background-color: #FFF; }
     html body img {
       width: 100%; }
+
+.button-boxy {
+  color: #FFF;
+  background: #4382C5;
+  text-transform: uppercase;
+  padding: 1rem 6.5rem;
+  border-radius: 0; }
+  .button-boxy:hover {
+    color: #000;
+    border: 1px solid #4382C5;
+    background: transparent; }
+
+.main-content {
+  margin: 4rem 7%; }
+
+.header {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 1.125rem; }
+  .header .logo {
+    margin-left: 3%; }
+  .header .menu {
+    display: flex;
+    margin-left: auto; }
+    .header .menu li {
+      list-style: none;
+      margin-right: 3rem; }
+      .header .menu li a {
+        text-decoration: none;
+        color: #14294F;
+        font-weight: bold; }
+        .header .menu li a:hover {
+          opacity: .8; }
+  .header .ico-contact {
+    background-color: #4382C5;
+    width: 100px;
+    height: 100px; }
+    .header .ico-contact img {
+      width: 65%; }
+
+.footer {
+  background: #14294F;
+  padding: 4rem 5%;
+  color: #FFF;
+  display: flex; }
+  .footer .footer-left {
+    width: 30%;
+    position: relative;
+    border-right: 2px solid #FFF; }
+    .footer .footer-left img {
+      width: 270px;
+      height: 56px; }
+    .footer .footer-left-contact {
+      margin: 2rem 0; }
+    .footer .footer-left .footer-ico-fb img {
+      width: 30px;
+      height: 30px; }
+    .footer .footer-left .footer-company-info {
+      font-size: 14px;
+      position: absolute;
+      bottom: 0; }
+  .footer .footer-right {
+    width: 70%; }
+    .footer .footer-right-block {
+      margin-left: 8%; }
+      .footer .footer-right-block .footer-right-ttl {
+        margin-bottom: 20px; }
+      .footer .footer-right-block .footer-right-elm {
+        margin-bottom: 7px; }
+      .footer .footer-right-block .footer-right-ttl a, .footer .footer-right-block .footer-right-elm a {
+        color: #FFF;
+        text-decoration: none; }
+        .footer .footer-right-block .footer-right-ttl a:hover, .footer .footer-right-block .footer-right-elm a:hover {
+          opacity: .8; }

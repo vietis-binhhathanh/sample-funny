@@ -22,3 +22,127 @@ html {
     }
 }
 
+.button-boxy {
+    color: #FFF;
+    background: $color-blue;
+    text-transform: uppercase;
+    padding: 1rem 6.5rem;
+    border-radius: 0;
+
+    &:hover {
+        color: #000;
+        border: 1px solid $color-blue;
+        background: transparent;
+    }
+}
+
+.main-content {
+    margin: 4rem 7%;
+}
+
+.header {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    @extend .flex-align-center;
+    width: 100%;
+    font-size: 1.125rem;
+
+    .logo {
+        margin-left: 3%;
+    }
+
+    .menu {
+        display: flex;
+        margin-left: auto;
+
+        li {
+            list-style: none;
+            margin-right: 3rem;
+
+            a {
+                text-decoration: none;
+                color: $color-default-text;
+                font-weight: bold;
+
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+
+    .ico-contact {
+        background-color: $color-blue;
+        width: 100px;
+        height: 100px;
+        @extend .flex-center;
+
+        img {
+            width: 65%;
+        }
+    }
+}
+
+.footer {
+    background: $color-default-text;
+    padding: 4rem 5%;
+    color: #FFF;
+    display: flex;
+
+    .footer-left {
+        width: 30%;
+        position: relative;
+        border-right: 2px solid #FFF;
+
+        img {
+            width: 270px;
+            height: 56px;
+        }
+
+        &-contact {
+            margin: 2rem 0;
+        }
+
+        .footer-ico-fb {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .footer-company-info {
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .footer-right {
+        width: 70%;
+
+        &-block {
+            margin-left: 8%;
+
+            .footer-right-ttl {
+                margin-bottom: 20px;
+            }
+
+            .footer-right-elm {
+                margin-bottom: 7px;
+            }
+
+            .footer-right-ttl, .footer-right-elm {
+                a {
+                    color: #FFF;
+                    text-decoration: none;
+
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+}
+

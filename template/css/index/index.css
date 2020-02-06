@@ -1,15 +1,118 @@
-.flex-center, .page .introduce-content, .page .news .new-element .new-mark {
+.flex-center, .header .ico-contact, .page .introduce-content, .page .introduce-content .element-first, .page .introduce-content .element-second, .page .introduce-content .element-third .img-top, .page .introduce-content .element-third .img-bottom, .page .news .new-element .new-mark, .page .news-btn, .page .new-banner-row .new-banner-col, .page .contact-row .contact-company, .page .contact-row .contact-recruit, .page .contact-row .contact-info {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.flex-align-center, .page .banner-bg, .page .news .new-element {
+.flex-align-center, .header, .page .banner-bg, .page .news .new-element {
   display: flex;
   align-items: center; }
 
-.text-upper-bold, .page .introduce-big-ttl {
+.text-upper-bold, .page .introduce-big-ttl, .page .contact-row .contact-company .contact-big-ttl, .page .contact-row .contact-recruit .contact-big-ttl, .page .contact-row .contact-info .contact-big-ttl {
   text-transform: uppercase;
   font-weight: bold; }
+
+.flex-center, .header .ico-contact, .page .introduce-content, .page .introduce-content .element-first, .page .introduce-content .element-second, .page .introduce-content .element-third .img-top, .page .introduce-content .element-third .img-bottom, .page .news .new-element .new-mark, .page .news-btn, .page .new-banner-row .new-banner-col, .page .contact-row .contact-company, .page .contact-row .contact-recruit, .page .contact-row .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex-align-center, .header, .page .banner-bg, .page .news .new-element {
+  display: flex;
+  align-items: center; }
+
+.text-upper-bold, .page .introduce-big-ttl, .page .contact-row .contact-company .contact-big-ttl, .page .contact-row .contact-recruit .contact-big-ttl, .page .contact-row .contact-info .contact-big-ttl {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+/* Font */
+@font-face {
+  font-family: "Yu Gothic";
+  src: url("../../template/fonts/yugothic.ttf"); }
+
+html {
+  font-size: 16px; }
+  html body {
+    font-family: "Yu Gothic";
+    color: #14294F;
+    background-color: #FFF; }
+    html body img {
+      width: 100%; }
+
+.button-boxy {
+  color: #FFF;
+  background: #4382C5;
+  text-transform: uppercase;
+  padding: 1rem 6.5rem;
+  border-radius: 0; }
+  .button-boxy:hover {
+    color: #000;
+    border: 1px solid #4382C5;
+    background: transparent; }
+
+.main-content {
+  margin: 4rem 7%; }
+
+.header {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 1.125rem; }
+  .header .logo {
+    margin-left: 3%; }
+  .header .menu {
+    display: flex;
+    margin-left: auto; }
+    .header .menu li {
+      list-style: none;
+      margin-right: 3rem; }
+      .header .menu li a {
+        text-decoration: none;
+        color: #14294F;
+        font-weight: bold; }
+        .header .menu li a:hover {
+          opacity: .8; }
+  .header .ico-contact {
+    background-color: #4382C5;
+    width: 100px;
+    height: 100px; }
+    .header .ico-contact img {
+      width: 65%; }
+
+.footer {
+  background: #14294F;
+  padding: 4rem 5%;
+  color: #FFF;
+  display: flex; }
+  .footer .footer-left {
+    width: 30%;
+    position: relative;
+    border-right: 2px solid #FFF; }
+    .footer .footer-left img {
+      width: 270px;
+      height: 56px; }
+    .footer .footer-left-contact {
+      margin: 2rem 0; }
+    .footer .footer-left .footer-ico-fb img {
+      width: 30px;
+      height: 30px; }
+    .footer .footer-left .footer-company-info {
+      font-size: 14px;
+      position: absolute;
+      bottom: 0; }
+  .footer .footer-right {
+    width: 70%; }
+    .footer .footer-right-block {
+      margin-left: 8%; }
+      .footer .footer-right-block .footer-right-ttl {
+        margin-bottom: 20px; }
+      .footer .footer-right-block .footer-right-elm {
+        margin-bottom: 7px; }
+      .footer .footer-right-block .footer-right-ttl a, .footer .footer-right-block .footer-right-elm a {
+        color: #FFF;
+        text-decoration: none; }
+        .footer .footer-right-block .footer-right-ttl a:hover, .footer .footer-right-block .footer-right-elm a:hover {
+          opacity: .8; }
 
 .page .banner {
   height: 100vh;
@@ -44,50 +147,151 @@
 
 .page .introduce-ttl {
   font-size: 1.25rem;
-  font-weight: bold;
   margin-bottom: 50px; }
 
 .page .introduce-content-element {
   font-weight: bold;
   color: #FFF;
-  font-size: 2rem; }
+  font-size: 2rem;
+  width: 100%; }
   .page .introduce-content-element.element-first, .page .introduce-content-element.element-second {
-    max-width: 30%;
-    height: 550px;
-    background-size: contain; }
+    width: 40%;
+    height: 785px; }
+    .page .introduce-content-element.element-first .introduce-big-ttl, .page .introduce-content-element.element-second .introduce-big-ttl {
+      font-size: 2rem;
+      font-weight: bold; }
+    .page .introduce-content-element.element-first .introduce-ttl, .page .introduce-content-element.element-second .introduce-ttl {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: normal; }
   .page .introduce-content-element.element-third {
-    max-width: 20%;
-    background-size: contain; }
+    width: 20%;
+    background-size: contain;
+    height: 785px;
+    display: flex;
+    flex-direction: column; }
+    .page .introduce-content-element.element-third .img-top .introduce-big-ttl, .page .introduce-content-element.element-third .img-bottom .introduce-big-ttl {
+      font-size: 2rem;
+      font-weight: bold; }
+    .page .introduce-content-element.element-third .img-top .introduce-ttl, .page .introduce-content-element.element-third .img-bottom .introduce-ttl {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: normal; }
+    .page .introduce-content-element.element-third .img-top-mini-ttl {
+      font-size: 1rem;
+      font-weight: normal; }
 
 .page .introduce-content .element-first {
-  background: url("../../../template/images/b-care.jpg") no-repeat center; }
+  flex-direction: column;
+  background: url("../../../template/images/b-care.jpg") no-repeat center;
+  background-size: cover; }
 
 .page .introduce-content .element-second {
-  background: url("../../../template/images/b-orversea.jpg") no-repeat center; }
+  flex-direction: column;
+  background: url("../../../template/images/b-orversea.jpg") no-repeat center;
+  background-size: cover;
+  position: relative; }
+  .page .introduce-content .element-second .element-second-descript {
+    position: absolute;
+    bottom: 55px;
+    font-size: 1.275rem;
+    font-weight: normal;
+    padding: 1rem 3rem;
+    background: #14294F;
+    text-align: center;
+    opacity: .7; }
 
 .page .introduce-content .element-third {
-  background: url("../../../template/images/b-travel.jpg") no-repeat center; }
+  height: 785px; }
+  .page .introduce-content .element-third .img-top {
+    height: 50%;
+    background: url("../../../template/images/b-travel.jpg") no-repeat center;
+    background-size: cover;
+    flex-direction: column; }
+  .page .introduce-content .element-third .img-bottom {
+    height: 50%;
+    background: url("../../../template/images/b-build.jpg") no-repeat center;
+    background-size: cover;
+    flex-direction: column; }
 
-.page .news {
-  margin: 4rem; }
-  .page .news .new-big-ttl, .page .news .new-ttl {
-    font-weight: bold; }
-  .page .news .new-big-ttl {
-    font-size: 3rem;
-    text-transform: uppercase; }
-  .page .news .new-ttl {
-    font-size: 1.25rem; }
-  .page .news .new-element {
+.page .news .new-big-ttl {
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+.page .news .new-ttl {
+  font-size: 1.25rem; }
+
+.page .news .new-element {
+  justify-content: flex-start;
+  font-size: 1.125rem;
+  padding: 20px 0;
+  border-bottom: 1px solid #ADB7BE; }
+  .page .news .new-element:first-child {
+    padding-top: 0; }
+  .page .news .new-element .new-datetime {
     font-size: 1.125rem;
-    padding: 20px 0;
-    border-bottom: 1px solid #ADB7BE; }
-    .page .news .new-element:first-child {
-      padding-top: 0; }
-    .page .news .new-element .new-datetime {
-      font-size: 1.125rem; }
-    .page .news .new-element .new-mark {
-      background-color: #5FC1EA;
-      color: #FFF;
-      margin: 0 15px;
-      width: 170px;
-      border-radius: 10px; }
+    font-weight: bold; }
+  .page .news .new-element .new-mark {
+    background-color: #5FC1EA;
+    color: #FFF;
+    margin: 0 15px;
+    border-radius: 20px;
+    padding: 3px 13px; }
+  .page .news .new-element .new-content {
+    max-width: 70%; }
+    .page .news .new-element .new-content a {
+      color: #14294F;
+      text-decoration: none; }
+      .page .news .new-element .new-content a:hover {
+        opacity: .8; }
+
+.page .news-btn {
+  margin-bottom: 4rem; }
+
+.page .new-banner-row {
+  margin: 0;
+  display: flex;
+  width: 100%; }
+  .page .new-banner-row .new-banner-col {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background: #ADB7BE;
+    min-height: 120px;
+    color: #FFF;
+    margin: 0 10px;
+    padding: 0;
+    width: 32%;
+    max-width: 32%;
+    cursor: pointer; }
+    .page .new-banner-row .new-banner-col:first-child {
+      margin-left: 0; }
+    .page .new-banner-row .new-banner-col:last-child {
+      margin-right: 0; }
+
+.page .contact-row {
+  display: flex;
+  width: 100%;
+  cursor: pointer; }
+  .page .contact-row .contact-company, .page .contact-row .contact-recruit {
+    height: 260px;
+    background: url("../../../template/images/top-com&rec.jpg") no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    color: #FFF;
+    width: 50%; }
+    .page .contact-row .contact-company .contact-big-ttl, .page .contact-row .contact-recruit .contact-big-ttl {
+      font-size: 3rem; }
+  .page .contact-row .contact-company {
+    margin-right: 1px; }
+  .page .contact-row .contact-recruit {
+    background-position: right;
+    margin-left: 1px; }
+  .page .contact-row .contact-info {
+    height: 200px;
+    background: #4382C5;
+    width: 100%;
+    flex-direction: column;
+    color: #FFF; }
+    .page .contact-row .contact-info .contact-big-ttl {
+      font-size: 3rem; }

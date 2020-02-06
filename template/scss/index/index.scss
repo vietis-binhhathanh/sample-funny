@@ -1,134 +1,292 @@
 @import "../utility";
+@import "../common";
 
 .page {
-  .banner {
-    height: 100vh;
-    overflow: hidden;
+    .banner {
+        height: 100vh;
+        overflow: hidden;
 
-    &-bg {
-      background: url('../../../template/images/top.jpg') no-repeat center;
-      background-size: cover;
-      height: 100%;
-      width: 103%;
-      transition: opacity 2s linear,background 5s ease-out;
-      background-position: 0;
-      @extend .flex-align-center;
+        &-bg {
+            background: url('../../../template/images/top.jpg') no-repeat center;
+            background-size: cover;
+            height: 100%;
+            width: 103%;
+            transition: opacity 2s linear,background 5s ease-out;
+            background-position: 0;
+            @extend .flex-align-center;
 
-      .slogan {
-        margin: 10% 0 0 5%;
+            .slogan {
+                margin: 10% 0 0 5%;
 
-        &-big, &-mini {
-          font-weight: bold;
-          color: $color-blue;
+                &-big, &-mini {
+                    font-weight: bold;
+                    color: $color-blue;
+                }
+
+                &-big {
+                    font-size: 3.75rem;
+                    text-transform: uppercase;
+                }
+
+                &-mini {
+                    font-size: 1.5rem;
+                    margin: 1rem 0 4rem;
+                }
+
+                &-descript {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
+
+    .introduce {
+        &-big-ttl, &-ttl {
+            text-align: center;
         }
 
-        &-big {
-          font-size: 3.75rem;
-          text-transform: uppercase;
+        &-big-ttl {
+            font-size: 3rem;
+            @extend .text-upper-bold;
+            margin-top: 130px;
         }
 
-        &-mini {
-          font-size: 1.5rem;
-          margin: 1rem 0 4rem;
+        &-ttl {
+            font-size: 1.25rem;
+            margin-bottom: 50px;
         }
 
-        &-descript {
-          font-size: 1.125rem;
+        &-content {
+            @extend .flex-center;
+            &-element {
+                font-weight: bold;
+                color: #FFF;
+                font-size: 2rem;
+                width: 100%;
+
+                &.element-first,
+                &.element-second {
+                    width: 40%;
+                    height: 785px;
+
+                    .introduce-big-ttl {
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+
+                    .introduce-ttl {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: normal;
+                    }
+                }
+
+                &.element-third {
+                    width: 20%;
+                    background-size: contain;
+                    height: 785px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .img-top, .img-bottom {
+                        .introduce-big-ttl {
+                            font-size: 2rem;
+                            font-weight: bold;
+                        }
+
+                        .introduce-ttl {
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            font-weight: normal;
+                        }
+                    }
+
+                    .img-top {
+                        &-mini-ttl {
+                            font-size: 1rem;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+
+            .element-first {
+                @extend .flex-center;
+                flex-direction: column;
+                background: url("../../../template/images/b-care.jpg") no-repeat center;
+                background-size: cover;
+            }
+
+            .element-second {
+                @extend .flex-center;
+                flex-direction: column;
+                background: url("../../../template/images/b-orversea.jpg") no-repeat center;
+                background-size: cover;
+                position: relative;
+
+                .element-second-descript {
+                    position: absolute;
+                    bottom: 55px;
+                    font-size: 1.275rem;
+                    font-weight: normal;
+                    padding: 1rem 3rem;
+                    background: $color-default-text;
+                    text-align: center;
+                    opacity: .7;
+                }
+            }
+
+            .element-third {
+                height: 785px;
+
+                .img-top {
+                    height: 50%;
+                    background: url("../../../template/images/b-travel.jpg") no-repeat center;
+                    background-size: cover;
+                    @extend .flex-center;
+                    flex-direction: column;
+                }
+
+                .img-bottom {
+                    height: 50%;
+                    background: url("../../../template/images/b-build.jpg") no-repeat center;
+                    background-size: cover;
+                    @extend .flex-center;
+                    flex-direction: column;
+                }
+            }
         }
-      }
-    }
-  }
-
-  .introduce {
-    &-big-ttl, &-ttl {
-      text-align: center;
     }
 
-    &-big-ttl {
-      font-size: 3rem;
-      @extend .text-upper-bold;
-      margin-top: 130px;
-    }
-
-    &-ttl {
-      font-size: 1.25rem;
-      font-weight: bold;
-      margin-bottom: 50px;
-    }
-
-    &-content {
-      @extend .flex-center;
-      &-element {
-
-        font-weight: bold;
-        color: #FFF;
-        font-size: 2rem;
-
-        &.element-first,
-        &.element-second {
-          max-width: 30%;
-          height: 550px;
-          background-size: contain;
+    .news {
+        .new-big-ttl {
+            font-weight: bold;
+            font-size: 3rem;
+            text-transform: uppercase;
         }
 
-        &.element-third {
-          max-width: 20%;
-          background-size: contain;
+        .new-ttl {
+            font-size: 1.25rem;
         }
-      }
 
-      .element-first {
-        background: url("../../../template/images/b-care.jpg") no-repeat center;
-      }
+        .new-element {
+            @extend .flex-align-center;
+            justify-content: flex-start;
+            font-size: 1.125rem;
+            padding: 20px 0;
+            border-bottom: 1px solid #ADB7BE;
 
-      .element-second {
-        background: url("../../../template/images/b-orversea.jpg") no-repeat center;
-      }
+            &:first-child {
+                padding-top: 0;
+            }
 
-      .element-third {
-        background: url("../../../template/images/b-travel.jpg") no-repeat center;
-      }
+            .new-datetime {
+                font-size: 1.125rem;
+                font-weight: bold;
+            }
+
+            .new-mark {
+                background-color: #5FC1EA;
+                color: #FFF;
+                @extend .flex-center;
+                margin: 0 15px;
+                border-radius: 20px;
+                padding: 3px 13px;
+            }
+
+            .new-content {
+                max-width: 70%;
+
+                a {
+                    color: $color-default-text;
+                    text-decoration: none;
+
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+
+        &-btn {
+            @extend .flex-center;
+            margin-bottom: 4rem;
+        }
     }
-  }
 
-  .news {
-    margin: 4rem;
+    .new-banner {
+        &-row {
+            margin: 0;
+            display: flex;
+            width: 100%;
 
-    .new-big-ttl, .new-ttl {
-      font-weight: bold;
+            .new-banner-col {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                background: #ADB7BE;
+                min-height: 120px;
+                @extend .flex-center;
+                color: #FFF;
+                margin: 0 10px;
+                padding: 0;
+                width: 32%;
+                max-width: 32%;
+                cursor: pointer;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
     }
 
-    .new-big-ttl {
-      font-size: 3rem;
-      text-transform: uppercase;
+    .contact {
+        &-row {
+            display: flex;
+            width: 100%;
+            cursor: pointer;
+
+            .contact-company, .contact-recruit {
+                height: 260px;
+                background: url("../../../template/images/top-com&rec.jpg") no-repeat;
+                background-size: cover;
+                @extend .flex-center;
+                flex-direction: column;
+                color: #FFF;
+                width: 50%;
+
+                .contact-big-ttl {
+                    font-size: 3rem;
+                    @extend .text-upper-bold;
+                }
+            }
+
+            .contact-company {
+                margin-right: 1px;
+            }
+
+            .contact-recruit {
+                background-position: right;
+                margin-left: 1px;
+            }
+
+            .contact-info {
+                height: 200px;
+                background: $color-blue;
+                width: 100%;
+                @extend .flex-center;
+                flex-direction: column;
+                color: #FFF;
+
+                .contact-big-ttl {
+                    font-size: 3rem;
+                    @extend .text-upper-bold;
+                }
+            }
+        }
     }
-
-    .new-ttl {
-      font-size: 1.25rem;
-    }
-
-    .new-element {
-      @extend .flex-align-center;
-      font-size: 1.125rem;
-      padding: 20px 0;
-      border-bottom: 1px solid #ADB7BE;
-
-      &:first-child {
-        padding-top: 0;
-      }
-
-      .new-datetime {
-        font-size: 1.125rem;
-      }
-
-      .new-mark {
-        background-color: #5FC1EA;
-        color: #FFF;
-        @extend .flex-center;
-        margin: 0 15px;
-        width: 170px;
-        border-radius: 10px;
-      }
-    }
-  }
 }
