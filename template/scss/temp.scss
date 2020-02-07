@@ -1,0 +1,81 @@
+@import "utility";
+
+/* Japanese Font */
+@font-face {
+	font-family: "Yu Gothic";
+	src: url('../../template/fonts/yugothic.ttf');
+}
+
+/* Latin Font */
+@font-face {
+	font-family: "JosefinSans";
+	src: url('../../template/fonts/JosefinSans-Regular.ttf');
+}
+
+html {
+	font-size: 12px;
+	// 1rem = 12px
+
+	body {
+		font-family: "Yu Gothic", sans-serif;
+		color: $color-default-text;
+		background-color: #FFF;
+		max-width: 1440px;
+		margin: 0 auto;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+header {
+
+	nav {
+		height: 100%;
+
+		.logo {
+			margin-left: 2.2rem;
+
+			img {
+				width: 220px;
+			}
+		}
+
+		.menu {
+			align-items: center;
+
+			.nav-item-contact {
+				height: 100px;
+				width: 100px;
+				@extend .flex-center;
+				background: $color-blue;
+				margin-right: -1rem;
+			}
+		}
+
+		.navbar-toggler {
+			border: none;
+			background: transparent !important;
+
+			.icon-bar {
+				width: 22px;
+				height: 2px;
+				background-color: #B6B6B6;
+				display: block;
+				transition: all 0.2s;
+				margin-top: 4px
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1202px) {
+	header {
+		height: 100px;
+	}
+}
+
+footer {
+
+}

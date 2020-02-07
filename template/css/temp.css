@@ -1,0 +1,61 @@
+.flex-center, header nav .menu .nav-item-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex-align-center {
+  display: flex;
+  align-items: center; }
+
+.text-upper-bold {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+/* Japanese Font */
+@font-face {
+  font-family: "Yu Gothic";
+  src: url("../../template/fonts/yugothic.ttf"); }
+
+/* Latin Font */
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../../template/fonts/JosefinSans-Regular.ttf"); }
+
+html {
+  font-size: 12px; }
+  html body {
+    font-family: "Yu Gothic", sans-serif;
+    color: #14294F;
+    background-color: #FFF;
+    max-width: 1440px;
+    margin: 0 auto; }
+    html body img {
+      width: 100%; }
+
+header nav {
+  height: 100%; }
+  header nav .logo {
+    margin-left: 2.2rem; }
+    header nav .logo img {
+      width: 220px; }
+  header nav .menu {
+    align-items: center; }
+    header nav .menu .nav-item-contact {
+      height: 100px;
+      width: 100px;
+      background: #4382C5;
+      margin-right: -1rem; }
+  header nav .navbar-toggler {
+    border: none;
+    background: transparent !important; }
+    header nav .navbar-toggler .icon-bar {
+      width: 22px;
+      height: 2px;
+      background-color: #B6B6B6;
+      display: block;
+      transition: all 0.2s;
+      margin-top: 4px; }
+
+@media screen and (min-width: 1202px) {
+  header {
+    height: 100px; } }

@@ -2,9 +2,16 @@
 
 /* Font */
 
+/* Japanese Font */
 @font-face {
     font-family: "Yu Gothic";
     src: url('../../template/fonts/yugothic.ttf');
+}
+
+/* Latin Font */
+@font-face {
+    font-family: "JosefinSans";
+    src: url('../../template/fonts/JosefinSans-Regular.ttf');
 }
 
 html {
@@ -12,7 +19,7 @@ html {
     // 1rem = 16px
 
     body {
-        font-family: "Yu Gothic";
+        font-family: "Yu Gothic", sans-serif;
         color: $color-default-text;
         background-color: #FFF;
 
